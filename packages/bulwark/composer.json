@@ -1,0 +1,25 @@
+{
+  "name": "aegisphp/bulwark",
+  "description": "AegisPHP Bulwark: composable security middlewares and startup security profiles.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.5",
+    "aegisphp/core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aegis\\Bulwark\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aegis\\Bulwark\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,0 +1,31 @@
+parameters:
+  level: 8
+
+  paths:
+    - packages/core/src
+    - packages/bulwark/src
+
+  # Monorepo: ignora vendor dentro de pacotes e caches
+  excludePaths:
+    - packages/*/vendor
+    - coverage
+    - .phpunit.cache
+    - .php-cs-fixer.cache
+
+  # Boa prática: tipagem estrita + previsibilidade
+  checkMissingIterableValueType: true
+  checkGenericClassInNonGenericObjectType: true
+  checkImplicitMixed: true
+  checkExplicitMixed: true
+  checkFunctionNameCase: true
+  checkInternalClassCaseSensitivity: true
+
+  # Evita “silêncio” perigoso
+  reportUnmatchedIgnoredErrors: true
+
+  # Configuração de análise de tipos
+  treatPhpDocTypesAsCertain: false
+
+  # PHPStan 1.x ainda não aceita 8.5 no schema de config.
+  # Mantemos 8.4 como target de análise até upgrade da ferramenta.
+  phpVersion: 80499

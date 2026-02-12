@@ -1,0 +1,82 @@
+# =========================
+# 🐘 Composer
+# =========================
+/vendor/
+# Lock do monorepo (raiz) deve ser versionado.
+!/composer.lock
+
+# Monorepo: vendors internos de cada pacote (se alguém rodar composer lá)
+packages/*/vendor/
+packages/*/composer.lock
+packages/*/.phpunit.cache/
+packages/*/.phpunit.result.cache
+packages/*/.php-cs-fixer.cache
+packages/*/coverage/
+packages/*/coverage-*.xml
+
+# =========================
+# 🧪 PHPUnit / Testing
+# =========================
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+coverage-*.xml
+
+# =========================
+# 🧠 PHPStan
+# =========================
+phpstan.neon.dist
+phpstan-baseline.neon
+.phpstan/
+
+# =========================
+# 🎨 PHP CS Fixer
+# =========================
+.php-cs-fixer.cache
+
+# =========================
+# 🔐 Environment files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# 🧾 Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# 🧰 Build / Artifacts
+# =========================
+build/
+dist/
+.tmp/
+tmp/
+.cache/
+
+# =========================
+# 🧑‍💻 IDEs
+# =========================
+
+# VS Code
+.vscode/
+
+# PHPStorm / IntelliJ
+.idea/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# =========================
+# 🖥️ OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# 🧪 Tools QA folder (cache)
+# =========================
+tools/qa/.cache/

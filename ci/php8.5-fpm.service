@@ -1,0 +1,16 @@
+[Unit]
+Description=PHP 8.5.2 FastCGI Process Manager
+After=network.target
+
+[Service]
+Environment="PHP_INI_SCAN_DIR=/opt/php-8.5.2/etc/conf.d"
+Type=simple
+PIDFile=/run/php/php8.5-fpm.pid
+ExecStart=/opt/php-8.5.2/sbin/php-fpm --nodaemonize --fpm-config /opt/php-8.5.2/etc/php-fpm.conf -c /opt/php-8.5.2/etc/php.ini
+ExecReload=/bin/kill -USR2 $MAINPID
+ExecStop=/bin/kill -INT $MAINPID
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

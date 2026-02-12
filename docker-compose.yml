@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ./ci
+    image: aegis-php-dev:8.5.2
+    container_name: aegis_dev
+    restart: unless-stopped
+    volumes:
+      - .:/app
