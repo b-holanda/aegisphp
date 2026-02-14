@@ -1,5 +1,5 @@
 {
-  "name": "aegisphp/monorepo",
+  "name": "aegis/monorepo",
   "description": "AegisPHP monorepo (development tooling). Packages live under /packages and are installable independently.",
   "type": "project",
   "license": "MIT",
@@ -13,14 +13,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Aegis\\Core\\": "packages/core/src/",
-      "Aegis\\Bulwark\\": "packages/bulwark/src/"
+      "Aegis\\Core\\": "packages/core/src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Aegis\\Core\\Tests\\": "packages/core/tests/",
-      "Aegis\\Bulwark\\Tests\\": "packages/bulwark/tests/"
+      "Aegis\\Core\\Tests\\": "packages/core/tests/"
     }
   },
   "minimum-stability": "dev",

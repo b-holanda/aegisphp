@@ -1,6 +1,6 @@
 {
-  "name": "aegisphp/core",
-  "description": "AegisPHP Core: minimal contracts + tiny implementations (HTTP, middleware pipeline, config/env, events, runtime strategy).",
+  "name": "aegis/core",
+  "description": "AegisPHP Core: main aegis enginer",
   "type": "library",
   "license": "MIT",
   "require": {

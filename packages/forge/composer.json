@@ -1,0 +1,11 @@
+{
+  "name": "aegis/forge",
+  "description": "AegisPHP Forge: environment development for aegis",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.5"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

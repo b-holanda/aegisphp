@@ -1,9 +1,8 @@
 parameters:
-  level: 8
+  level: 9
 
   paths:
     - packages/core/src
-    - packages/bulwark/src
 
   # Monorepo: ignora vendor dentro de pacotes e caches
   excludePaths:
